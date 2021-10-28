@@ -1,0 +1,7 @@
+https://mysterious-inlet-05702.herokuapp.com/
+
+Özellikler;
+
+1) Server Koa ile yazılmıştır. 
+2) Site /users ve /book adlı iki url'e sahiptir
+2) Sitede atılan isteklerin süresi ölçülüp gösterilmiştir. 
