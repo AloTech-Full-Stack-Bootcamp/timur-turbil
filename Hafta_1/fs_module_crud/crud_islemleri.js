@@ -1,6 +1,5 @@
 const fs = require('fs').promises;
-
-var fileName = "/Users/timur/Desktop/basic/nodejs/createServerWithHttp/odev/employees.json";
+var fileName = "/Users/timur/Desktop/basic/nodejs/Alotech-fullstack-bootcamp/Hafta_1/fs_module_crud/employees.json";
 
 
 const createAndWriteFunction = () => {
@@ -37,8 +36,8 @@ const deleteFile = () => {
 }
 
 //createAndWriteFunction();
-//read().then((e) => {
-//    console.log(`here  ${e}`)
-//});
+read().then((e) => {
+    console.log(`here ${JSON.stringify(JSON.parse(e))}`)
+});
 //update();
-//deleteFile();
+/* deleteFile(); */
