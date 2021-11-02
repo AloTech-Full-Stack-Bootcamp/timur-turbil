@@ -4,7 +4,7 @@ export default async function getPhoto() {
     try {
         const res = await axios({
             method: "get",
-            url: "http://localhost:8080/photo",
+            url: "https://lit-hamlet-20521.herokuapp.com/photo",
         })
         return res.data;
     } catch (error) {

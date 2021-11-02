@@ -4,7 +4,7 @@ export default async function postPhoto(data) {
     try {
         const res = await axios({
             method: "post",
-            url: "http://localhost:8080/photo",
+            url: "https://lit-hamlet-20521.herokuapp.com/photo",
             data: data,
             headers: {
                 "Content-Type": "application/json",

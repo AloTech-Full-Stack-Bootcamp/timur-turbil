@@ -5,6 +5,7 @@ import getPhoto from "../../services/get_photo";
 import './home_page.css';
 import ReactPaginate from 'react-paginate';
 import deletePhoto from "../../services/delete_photo";
+import { publicUrl } from "../../helpers/url";
 class HomePage extends React.Component {
     constructor(props) {
         super(props);
@@ -19,6 +20,7 @@ class HomePage extends React.Component {
     componentDidMount() {
         this.receivedData();
     }
+    
 
     receivedData = () => {
         getPhoto().then((data) => {
@@ -29,7 +31,7 @@ class HomePage extends React.Component {
                     <p style={{ width: '300px' }}>{pd.description}</p>
                     <button onClick={() => deletePhoto(pd._id).then(() => this.receivedData())}>delete</button>
                     <button onClick={() => history.push('/photo', pd)}>Click to Update</button>
-                    <img style={{ width: '300px', height: '300px' }} src={"http://localhost:8080" + pd.image} alt="" />
+                    <img style={{ width: '300px', height: '300px' }} src={publicUrl + pd.image} alt="" />
                 </div>
             </React.Fragment>)
             this.setState({
