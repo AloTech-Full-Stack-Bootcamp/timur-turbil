@@ -1,21 +1,20 @@
 {
-  "name": "pcat_app",
+  "name": "pcat-app-backend-with-node",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
+  "author": "Timur Turbil",
+  "license": "MIT",
   "scripts": {
     "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Timur Turbil",
-  "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "express-fileupload": "^1.2.1",
-    "fs": "*",
-    "http": "*",
+    "fs": "^0.0.1-security",
+    "http": "^0.0.1-security",
     "mongoose": "^6.0.12",
     "nodemon": "^2.0.14"
   }

@@ -78,3 +78,12 @@ app.delete('/photo/:id', async (req, res) => {
 app.listen(process.env.PORT || 8080, () => {
     console.log("8080 portunda çalışıyor")
 })
+
+/*     "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.2.1",
+    "fs": "*",
+    "http": "*",
+    "mongoose": "^6.0.12",
+    "nodemon": "^2.0.14" */
