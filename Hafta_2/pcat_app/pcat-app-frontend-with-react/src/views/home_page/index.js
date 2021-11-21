@@ -66,7 +66,6 @@ class HomePage extends React.Component {
             <div>
                 <div>
                     <h4>Not1: Frontend kısmında react kullandığım için ejs'de verilen bootsrap style'larını kullanamadım o yüzden görünüş biraz göz kanatabilir ama backend kısmında yapılan tüm işlemler tamamlandı.</h4>
-                    <h4>Not2: Eklenilen resimler büyük ihtimalle heroku serverinden dolayı görünmeyecek. Siz kendi resimlerinizi ekleyip test edebilirsiniz.</h4>
                     <h2>Pcat</h2>
                     <button onClick={() => history.push('addphoto')}>Go To Add Photo Screen</button>
                     <input ref={input => this.inputElement = input} type="file" name="newsImage" id="exampleFile" style={{ opacity: "inherit", position: "inherit", display: "none" }}
